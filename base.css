@@ -1,0 +1,86 @@
+@charset "utf-8";
+
+/*全体*/
+.wrapper{
+    max-width: 1920px;
+    max-height: 1000px;
+    margin: 0 auto;
+    color: #666;
+}
+#header {
+    text-decoration:underline;
+    text-align: center;
+    font-size: 32px;
+    width: 100%;
+    margin: 1rem 0 0;
+}
+
+/*カレンダー*/
+#calendar {
+    text-align: center;
+    width: 100%;
+}
+table {
+    outline: 5px solid #96d35f;
+    border-collapse: collapse;
+    width: 100%;
+}
+th {
+    color: #000;
+}
+th, td {
+    outline: 1px solid #96d35f;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+    text-align: center;
+}
+/*日曜日*/
+/*祝日*/
+td:first-child,
+td.holiday{
+    text-decoration:underline;
+    color: red;
+}
+
+/*土曜日*/
+td:last-child {
+    text-decoration:underline;
+    color: blue;
+}
+
+/*前後月の日付*/
+td.disabled {
+    color: #ccc;
+}
+/*本日*/
+td.today {
+    background: radial-gradient(#ff007d,#ff0000);
+    color: #fff;
+}
+
+/*ボタン*/
+#next-prev-button {
+    position: relative;
+}
+#next-prev-button button{
+    text-decoration:underline;
+    cursor: pointer;
+    background: #005d00;
+    color: #fff;
+    border: 1px solid #00000;
+    border-radius: 4px;
+    font-size: 1rem;
+    padding: 0.5rem 2rem;
+    margin: 1rem 0;
+}
+#next-prev-button button:hover{
+    background-color: #00a000;
+    border-color: #333333;
+    padding: 1rem 2.5rem;
+}
+#prev {
+    float: left;
+}
+#next {
+    float: right;
+}
